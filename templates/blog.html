@@ -4,3 +4,19 @@
 
         <p>{{ message }}</p>
     </div>
+    
+    <div class="card">
+    <div class="blogDiv" ng-controller="firebaseController">
+    <ul>
+      <li ng-repeat="blog in blogs">
+        <!-- edit a message -->
+        <h2>{{blog.title}}</h2>
+        <h3>{{blog. author}}</h3>
+        <p>{{blog.body}}</p>
+        <!-- delete a message 
+        <button ng-click="blogs.$remove(message)">Delete Message</button> -->
+      </li>
+    </ul>
+   
+  </div>
+  </div>
