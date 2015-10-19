@@ -90,12 +90,12 @@
   // the message is automatically added to our Firebase database!
   	$scope.addBlog = function() {			
 		$scope.blogs.$add({
-    	  blog:{
+
 		  title: $scope.newBlogTitle,
 		  author: $scope.newBlogAuthor,
 		  body: $scope.newBlogBody,
 		  dateTime: $scope.clock
-		  }
+		  
 		  });
   	};
   });

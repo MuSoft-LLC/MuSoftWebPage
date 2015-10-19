@@ -24,7 +24,6 @@
 	width: 50%;
 }
 .blogDiv {
-	padding-left: 20px;
 	margin: 0 auto;
 	margin-bottom: 200px;
 }
@@ -39,7 +38,9 @@
 .card li {
 	background-color: darkgrey;
 	border-radius: 3px;
-	padding: 5px 100px;
+
+	margin-bottom: 20px;
+	border: 2px solid black;
 }
 .tipCalcDiv img {
 	padding: 10px;
