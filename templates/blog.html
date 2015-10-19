@@ -1,4 +1,4 @@
-<!-- about.html -->
+<!-- blog.html -->
     <div class="jumbotron text-center">
         <h1>Blog Page</h1>
 
@@ -8,11 +8,12 @@
     <div class="card">
     <div class="blogDiv" ng-controller="firebaseController">
     <ul>
-      <li ng-repeat="blog in blogs">
+      <li ng-repeat="blog in blogs | orderBy:'-dateTime'">
         <!-- edit a message -->
         <h2>{{blog.title}}</h2>
         <h3>{{blog. author}}</h3>
         <p>{{blog.body}}</p>
+        <p>{{blog.dateTime | date:'EEE MMM d, y hh:mma'}}</p>
         <!-- delete a message 
         <button ng-click="blogs.$remove(message)">Delete Message</button> -->
       </li>
