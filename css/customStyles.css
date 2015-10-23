@@ -36,8 +36,8 @@ body {
 	border-radius: 10px;
 	margin-bottom: 20px;
 	margin-right: 25px;
-	-webkit-box-shadow:5px 5px 5px darkslategrey;
- 	box-shadow:5px 5px 5px darkslategrey00;
+	-webkit-box-shadow:5px 5px white;
+ 	box-shadow:0 12px 15px 0 rgba(0,0,0,0.24);
 	padding: 20px;
 	
 }
