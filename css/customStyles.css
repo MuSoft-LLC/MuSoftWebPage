@@ -38,8 +38,16 @@ body {
 	margin-right: 25px;
 	-webkit-box-shadow:5px 5px white;
  	box-shadow:0 12px 15px 0 rgba(0,0,0,0.24);
+	padding: 20px;	
+}
+
+.contactDiv {
+	width: 90%;	
 	padding: 20px;
-	
+}
+
+.contactDiv label {
+	display:initial;
 }
 .tipCalcDiv img {
 	padding: 10px;
