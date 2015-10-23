@@ -1,65 +1,55 @@
 
+body {
+	background-color: gray;
+}
 #main {
     font-size: 18px;
 	margin-bottom: 200px;
 }
-
-.applicationsDiv{
-	padding: 5%;
-}
-
 .blogEntryDiv {
-	padding-left: 20px;
+	width: 90%;	
+	padding: 25px;
+	background-color: white;
+	border-radius: 10px;
 	margin: 0 auto;
-	width: 90%;
-	
+	display: block;
 }
-.blogEntryDiv input {
-	width: 50%;
-}
+
 .blogEntryDiv label {
 	width: 200px;
 }
-.blogEntryDiv textarea {
+
+.blogEntryDiv form {
 	width: 50%;
 }
+
 .blogDiv {
-	margin: 0 auto;
 	margin-bottom: 200px;
 }
 .blogDiv li {
 	list-style-type: none;
-	border: black;
+	border: darkslategray;	
 }
-.card {
-	display:flex;
-}
-
 .card li {
-	background-color: darkgrey;
-	border-radius: 3px;
-
+	background-color:white;
+	padding-right: 20px;
+	border-radius: 10px;
 	margin-bottom: 20px;
-	border: 2px solid black;
+	margin-right: 25px;
+	-webkit-box-shadow:5px 5px 5px darkslategrey;
+ 	box-shadow:5px 5px 5px darkslategrey00;
+	padding: 20px;
+	
 }
 .tipCalcDiv img {
 	padding: 10px;
-
 }
 .tipCalcContent {
 	display: flex;
 }
 
-
-
-
-
-
-
-
 /* Footer Section */
 .footer {
-  
     width: 100%;
     padding: 20px 0px 20px 0px;
     text-align: right;
@@ -85,13 +75,10 @@
 }
 
 /* Footer left */
-
 .footer-distributed .footer-left{
 	float: left;
 }
-
 /* The company logo */
-
 .footer-distributed h3{
 	color:  #ffffff;
 	font: normal 36px 'Cookie', cursive;
