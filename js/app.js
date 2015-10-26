@@ -40,7 +40,12 @@
 			.when('/blogEntry', {
 				templateUrl: 'templates/blogEntry.html',
 				controller: 'blogEntryController'
-			});			
+			})	
+			
+			.when('/contactList', {
+				templateUrl: 'templates/contactList.html',
+				controller: 'contactController'
+			});		
 	});
 
 
