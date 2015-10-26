@@ -8,7 +8,7 @@
     <div class="card">
     <div class="blogDiv" ng-controller="firebaseContactController">
     <ul>
-      <li ng-repeat="contact in contacts | orderBy:'-dateTime'">
+      <li ng-repeat="contact in contacts | orderBy:'-contact.dateTime'">
         <!-- prints a blog post -->
         <h2>{{contact.contact.name}}</h2>
         <h3>{{contact.contact.email}}</h3>
