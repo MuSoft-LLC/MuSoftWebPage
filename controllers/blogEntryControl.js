@@ -1,6 +1,5 @@
 angular.module('MuSoft').controller('blogEntryController', 
 	function($scope, $uibModal, $log) {
-
 	
 	  $scope.items = ['item1', 'item2', 'item3'];
 

@@ -6,16 +6,14 @@
     </div>
     
     <div class="card">
-    <div class="blogDiv" ng-controller="firebaseController">
+    <div class="blogDiv" ng-controller="firebaseBlogController">
     <ul>
       <li ng-repeat="blog in blogs | orderBy:'-dateTime'">
-        <!-- edit a message -->
-        <h2>{{blog.title}}</h2>
-        <h3>{{blog. author}}</h3>
-        <p>{{blog.body}}</p>
-        <p>{{blog.dateTime | date:'EEE MMM d, y hh:mma'}}</p>
-        <!-- delete a message 
-        <button ng-click="blogs.$remove(message)">Delete Message</button> -->
+        <!-- prints a blog post -->
+        <h2>{{blog.blog.title}}</h2>
+        <h3>{{blog.blog.author}}</h3>
+        <p>{{blog.blog.body}}</p>
+        <p>{{blog.blog.dateTime | date:'EEE MMM d, y hh:mma'}}</p>
       </li>
     </ul>
    
