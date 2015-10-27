@@ -8,12 +8,12 @@
     <div class="card">
     <div class="blogDiv" ng-controller="firebaseBlogController">
     <ul>
-      <li ng-repeat="blog in blogs | orderBy:'-dateTime'">
+      <li ng-repeat="blog in blogs | orderBy:'-blog.dateTime'">
         <!-- prints a blog post -->
         <h2>{{blog.blog.title}}</h2>
         <h3>{{blog.blog.author}}</h3>
         <p>{{blog.blog.body}}</p>
-        <p>{{blog.blog.dateTime | date:'EEE MMM d, y hh:mma'}}</p>
+        <p>{{blog.blog.dateTime | date:'MMM d, y hh:mma'}}</p>
       </li>
     </ul>
    

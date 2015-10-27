@@ -41,7 +41,6 @@
 
 </head>
 
-
 <!-- define angular controller -->
 <body ng-controller="homeController">
 
@@ -51,8 +50,7 @@
   <div id="main">
     <div ng-view></div>   
   </div>
-  
-  
+   
     <div ng-controller="blogEntryController">
     <script type="text/ng-template" id="blogEntryModal.html">
         <div class="modal-header">
@@ -81,8 +79,6 @@
         </div>
     </script>
  </div>
- 
-  
   
   <div ng-controller="contactController">
     <script type="text/ng-template" id="contactModal.html">
@@ -103,8 +99,7 @@
                   <p></p>
                   <button type="submit" class="btn btn-default">Add Post</button> 
                   </form>
-        </div>
-            
+        </div>      
         </div>
         <div class="modal-footer">
             <button type="submit" class="btn btn-primary" type="button" ng-click="ok()">OK</button>
@@ -112,13 +107,7 @@
         </div>
     </script>
  </div>
- 
-
- 
- 
-  
-  
-       
+     
 </body>
 
 <footer>

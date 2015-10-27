@@ -1,8 +1,4 @@
- 
-
-    
-    
-    <div ng-controller="blogEntryController">
+ <div ng-controller="blogEntryController">
     <script type="text/ng-template" id="blogEntryModal.html">
         <div class="modal-header">
             <h3 class="modal-title">I'm a modal!</h3>
@@ -16,27 +12,9 @@
             Selected: <b>{{ selected.item }}</b>
         </div>
         <div class="modal-footer">
-            <button class="btn btn-primary" type="button" ng-click="ok()">OK</button>
-            <button class="btn btn-warning" type="button" ng-click="cancel()">Cancel</button>
+         <!--   <button class="btn btn-primary" type="button" ng-click="ok()">OK</button>
+            <button class="btn btn-warning" type="button" ng-click="cancel()">Cancel</button> -->
         </div>
-    </script>
-
-    
-    
+    </script>   
  </div> 
  
- <!-- push a new message onto the array 
-    <div class="blogEntryDiv" ng-controller="firebaseController">
-    <form ng-submit="addBlog()">
-      <h3>Title:</h3>
-      <input class="form-control" ng-model="newBlogTitle" />
-      <h3>Author:</h3>
-      <input class="form-control" ng-model="newBlogAuthor" />
-      <h3>Blog Entry: </h3>
-      <textarea class="form-control" ng-model="newBlogBody"></textarea>
-      <p></p>
-      <label id="lblTime" class="form-control" ng-model="newBlogDateTime">{{ clock | date:'medium'}}</label> 
-      <p></p>
-      <button type="submit" class="btn btn-default">Add Post</button>
-    </form>
-    </div> -->

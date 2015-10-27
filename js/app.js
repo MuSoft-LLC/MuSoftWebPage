@@ -45,7 +45,9 @@
 			.when('/contactList', {
 				templateUrl: 'templates/contactList.html',
 				controller: 'contactController'
-			});		
+			});
+			
+			//.otherwise('/404')		
 	});
 
 
