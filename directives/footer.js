@@ -1,8 +1,7 @@
 MuSoft.directive('bootstrapFooter',function(){
   return {
         restrict:'E',
-        templateUrl:'templates/footer.html',
-      
+        templateUrl:'templates/footer.html',     
         scope:{
             options:"="
         },
