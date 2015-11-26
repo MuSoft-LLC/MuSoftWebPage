@@ -2,8 +2,6 @@
  angular.module('MuSoft').controller('contactController',
    function ($scope, $uibModal, $log) {
 
-
-  
   $scope.items = ['item1', 'item2', 'item3'];
 
   $scope.animationsEnabled = true;

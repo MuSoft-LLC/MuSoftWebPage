@@ -72,6 +72,20 @@ body {
 	display: flex;
 }
 
+.socialLogin {
+    display: table;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.customForm {
+	width: 80%;
+	margin: auto;
+	border-radius: 4px;
+	padding: 20px;
+    border: 2px solid black;
+}
+
 /* Footer Section */
 .footer {
     width: 100%;
@@ -83,6 +97,11 @@ body {
     text-muted class in bootstrap.min.css ask Nick for help if needed, it is currently set to black */
     border-radius: 3px;
 }
+
+	.navImage {
+		height: 32px;
+		width: 32px;
+	}
 
 .footer-distributed{
 	position: fixed;
@@ -150,7 +169,7 @@ body {
 	margin-bottom: 5px;
 }
 
-/* Footer Right */
+/* Footer  */
 .footer-distributed .footer-right{
 	float: right;
 }
@@ -160,7 +179,7 @@ body {
 	margin: 15px 42px 0 0;
 	color: #ffffff;
 }
-/* The contact form */
+
 .footer-distributed form{
 	display: inline-block;
 }
@@ -248,3 +267,4 @@ body {
 		float: none;
 	}
 }
+

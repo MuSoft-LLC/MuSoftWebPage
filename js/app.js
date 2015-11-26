@@ -47,6 +47,24 @@
 				controller: 'contactController'
 			})
 			
+			.when('/login', {
+				templateUrl: 'templates/login.html',
+				controller: 'logInController'
+
+			})
+			
+			.when('/logout', {
+				templateUrl: 'templates/logout.html',
+				controller: 'logOutController'
+
+			})
+			
+			.when('/signup', {
+				templateUrl: 'templates/signup.html',
+				controller: 'signUpController'
+
+			})
+			
 			.when('/404', {
 				templateUrl: 'templates/404.html',
 				controller: '404Controller'

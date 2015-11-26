@@ -25,6 +25,11 @@
   <script src="controllers/blogEntryControl.js"></script>
   <script src="controllers/homeControl.js"></script>
   <script src="controllers/404Control.js"></script>
+  <script src="controllers/loginControl.js"></script>
+  <script src="controllers/logoutControl.js"></script>
+  <script src="controllers/signupControl.js"></script>
+  <script src="controllers/auth.js"></script>
+  <script src="factories/authFactory.js"></script>
      
   <title>MuSoft Software Development</title>
   
@@ -48,9 +53,11 @@
   <bootstrap-navbar></bootstrap-navbar>
  
   <!-- Partial views are loaded here -->
-  <div id="main">
-    <div ng-view></div>   
-  </div>
+    <div id="main">
+      <div ng-view></div>   
+    </div>
+
+  
    
     <div ng-controller="blogEntryController">
     <script type="text/ng-template" id="blogEntryModal.html">
@@ -109,6 +116,9 @@
         
     </script>
  </div>
+
+
+
 </body>
-    <bootstrap-footer></bootstrap-footer>
+   
 </html>

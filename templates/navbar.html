@@ -1,4 +1,4 @@
-      <nav class="navbar navbar-inverse">
+      <nav ng-controller="authController" class="navbar navbar-inverse">
         <div class="container-fluid">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -24,6 +24,11 @@
               </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
+              <li><a ng-show="authData"> {{ authData.github.displayName }} </a></li>
+              <li><a ng-show="authData" href="#"> <img class="navImage" ng-src="{{ authData.github.cachedUserProfile.avatar_url }}" /></a></li>
+              <li><a ng-hide="authData" href="#signup">Sign Up</a></li>
+              <li><a ng-hide="authData" href="#login" >Login</a></li>
+              <li><a ng-show="authData" href="#" ng-click="logout()">Logout</a></li>         
               <li class="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Admin<span class="caret"></span></a>
                 <ul class="dropdown-menu">

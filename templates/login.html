@@ -1,0 +1,31 @@
+  <div class="jumbotron text-center">
+        <h1>Log In</h1>
+        <p>{{ message }}</p>
+    </div>
+
+
+<form class="customForm">
+    <h3>Email: </h3>
+    <input type="email" class="form-control" ng-model="email" />
+    <h3>Password: </h3>
+    <input type="password" class="form-control" ng-model="password" />
+      
+      <div class="socialLogin">
+      <br />
+      <p>- or - </p>
+      <br />
+      <p>Login in With</p>
+      <br />
+      <br />
+     
+      <div class="gitLogDiv" ng-controller="authController">
+          <div class="button raised blue">
+            <button href="#logout" ng-click="login()" class="btn btn-primary" fit>Github</button>
+          </div>
+        
+      
+      </div>
+    </div>
+</form>
+
+ 
