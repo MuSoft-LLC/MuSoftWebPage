@@ -19,6 +19,41 @@ angular.module('MuSoft').controller('authController', function($scope, AuthFacto
 			 AuthFactory.$unauth();
 		 }
 		 
+		
+		
+		$scope.fbLogin = function(){
+		ref.authWithOAuthPopup("facebook", function(error, authData) {
+  				if (error) {
+    				console.log("Login Failed!", error);
+  				} else {
+    				console.log("Authenticated successfully with payload:", authData);
+  				}
+			});
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		//not currently working 
+		
+		
 		//creates users
 			ref.createUser({
   				email    : "nickmuscara@gmail.com",
