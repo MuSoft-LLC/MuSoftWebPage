@@ -65,6 +65,12 @@
 
 			})
 			
+			.when('/profile', {
+				templateUrl: 'templates/profile.html',
+				controller: 'authController'
+
+			})
+			
 			.when('/404', {
 				templateUrl: 'templates/404.html',
 				controller: '404Controller'

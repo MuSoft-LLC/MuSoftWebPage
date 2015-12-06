@@ -1,0 +1,14 @@
+<!-- 404.html -->
+    <div ng-controller="authController" class="jumbotron text-center">
+       <a ng-show="authData.github" href="#"> <img class="navImage" ng-src="{{ authData.github.cachedUserProfile.avatar_url }}" /></a>
+       <a ng-show="authData.facebook" href="#"> <img class="navImage" style="width:64px; height:64px;" ng-src="{{ authData.facebook.profileImageURL }}" /></a>
+        <p>{{ authData.facebook.displayName }}</p>
+    </div>
+	
+	<form class="profileForm">
+        <p>Name: {{ authData.facebook.displayName }}</p>
+        <p>Gender: {{ authData.facebook.cachedUserProfile.gender }}</p>
+        <p>Time Zone: {{ authData.facebook.cachedUserProfile.timezone }}</p>
+        
+     
+    </form>
