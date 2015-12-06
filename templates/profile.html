@@ -6,9 +6,11 @@
     </div>
 	
 	<form class="profileForm">
+      <div> 
         <p>Name: {{ authData.facebook.displayName }}</p>
         <p>Gender: {{ authData.facebook.cachedUserProfile.gender }}</p>
         <p>Time Zone: {{ authData.facebook.cachedUserProfile.timezone }}</p>
-        
+      </div> 
+               
      
     </form>

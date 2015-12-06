@@ -30,54 +30,34 @@ angular.module('MuSoft').controller('authController', function($scope, AuthFacto
   				}
 			});
 		}
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		//not currently working 
+			
+		// email / password login not currently working 
 		
 		
 		//creates users
-			ref.createUser({
-  				email    : "nickmuscara@gmail.com",
-  				password : "1234"
-	    	}, function(error, userData) {	
-				  if (error) {
-    				console.log("Error creating user:", error);
-  				} else {
-    				console.log("Successfully created user account with uid:", userData.uid);
-  				}
+		//	ref.createUser({
+  		//		email    : "nickmuscara@gmail.com",
+  		//		password : "1234"
+	    //	}, function(error, userData) {	
+		//		  if (error) {
+    	//			console.log("Error creating user:", error);
+  		//		} else {
+    	//			console.log("Successfully created user account with uid:", userData.uid);
+  		//		}
 				  
-				  remember: "sessionOnly"
-		}); 
+		//		  remember: "sessionOnly"
+		//   }); 
 		
 		//logs users in
-		ref.authWithPassword({
-  			email    : "bobtony@firebase.com",
- 			 password : "correcthorsebatterystaple"
-			}, function(error, authData) {
-  				if (error) {
-  				  console.log("Login Failed!", error);
- 			 	} else {
-  				 console.log("Authenticated successfully with payload:", authData);
- 				 }
-			});
+		//ref.authWithPassword({
+  		//	email    : "bobtony@firebase.com",
+ 		//	 password : "correcthorsebatterystaple"
+		//	}, function(error, authData) {
+  		//		if (error) {
+  		//		  console.log("Login Failed!", error);
+ 		//	 	} else {
+  		//		 console.log("Authenticated successfully with payload:", authData);
+ 		//		 }
+		//	});
 });
 	
