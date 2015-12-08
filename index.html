@@ -34,22 +34,26 @@
   <title>MuSoft Software Development</title>
   
   <!-- meta tags -->
+  
   <meta name="description" content="Musoft Webpage">
   <meta name="author" content="Musoft LLC">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <meta charset="utf-8">     
+  
+  <!-- Styles -->
   <link rel="stylesheet" href="css/bootstrap-theme.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/customStyles.css">
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap-social.css">
+  
   <!-- probably don't need -->
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
-
 </head>
 
 <!-- define angular controller -->
 <body ng-controller="homeController">
-
+<!-- navbar template -->
   <bootstrap-navbar></bootstrap-navbar>
  
   <!-- Partial views are loaded here -->
@@ -57,8 +61,6 @@
       <div ng-view></div>   
     </div>
 
-  
-   
     <div ng-controller="blogEntryController">
     <script type="text/ng-template" id="blogEntryModal.html">
         <div class="modal-header">
@@ -82,10 +84,8 @@
                   </div>
                  
                   </form>
+            </div>      
         </div>
-            
-        </div>
-       
     </script>
  </div>
   
@@ -109,16 +109,11 @@
                   <button type="submit" class="btn btn-primary" type="button" ng-click="ok()">Send</button>
                   <button class="btn btn-warning" type="button" ng-click="cancel()">Cancel</button>
                   </form>
-                  </div>      
-           </div>
-        
-          
-        
+            </div>      
+        </div>
     </script>
  </div>
-
-
-
+ 
 </body>
    
 </html>
