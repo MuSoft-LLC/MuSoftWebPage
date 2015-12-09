@@ -5,37 +5,52 @@
 
 
 <form class="customForm">
-    <h3>Email: </h3>
+   <!-- <h3>Email: </h3>
     <input type="email" class="form-control" ng-model="email" />
     <h3>Password: </h3>
-    <input type="password" class="form-control" ng-model="password" />
+    <input type="password" class="form-control" ng-model="password" /> -->
       
   <div class="socialLogin">
+      <h2>Login</h2>
       <br />
-      <p>- or - </p>
-      <br />
-      <p>Login in With</p>
-      <br />
+           <a ng-click="gitLogin()"  class="btn btn-block btn-social btn-reddit ">
+            <span class="fa fa-login" ></span>
+                  E-mail Login
+           </a>
       <br />
      
       <div class="gitLogDiv" ng-controller="authController"> 
-         <a ng-click="fbLogin()"  class="btn btn-block btn-social btn-facebook">
+         <a href="#profile" ng-click="fbLogin()"  class="btn btn-block btn-social btn-facebook">
             <span class="fa fa-facebook"></span>
                   Sign in with Facebook
         </a>
         <br />
         <!-- need to setup -->
-        <a class="btn btn-block btn-social btn-twitter">
+        <a ng-click="twitterLogin()" class="btn btn-block btn-social btn-twitter">
             <span class="fa fa-twitter"></span>
                   Sign in with Twitter
         </a>
         <br />
-        <a ng-click="login()"  class="btn btn-block btn-social btn-github">
+        <a ng-click="gitLogin()"  class="btn btn-block btn-social btn-github">
             <span class="fa fa-github"></span>
-                  Sign in with Github
+                  Sign in with Github    
         </a>
       </div>
-    </div>
+      <br />
+      <br />
+      <h3>- or - </h3>
+      <br />
+      <h2>Signup</h2>
+      <br /> 
+           <a ng-click="gitLogin()"  class="btn btn-block btn-social btn-reddit ">
+            <span class="fa fa-signup" ></span>
+                  Sign up
+           </a>
+      
+      <br />
+      <br />
+    
+    </div>  
 </form>
 
  

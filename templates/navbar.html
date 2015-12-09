@@ -24,9 +24,10 @@
               </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="#profile" ng-show="authData"> {{ authData.github.displayName }} {{ authData.facebook.displayName }}  </a></li>
+              <li><a href="#profile" ng-show="authData"> {{authData.twitter.displayName}} {{ authData.github.displayName }} {{ authData.facebook.displayName }}  </a></li>
               <li><a ng-show="authData.github" href="#"> <img class="navImage" ng-src="{{ authData.github.cachedUserProfile.avatar_url }}" /></a></li>
               <li><a ng-show="authData.facebook" href="#"> <img class="navImage" ng-src="{{ authData.facebook.profileImageURL }}" /></a></li>
+              <li><a ng-show="authData.twitter" href="#"> <img class="navImage" ng-src="{{  authData.twitter.profileImageURL }}" /></a></li>
               <li><a ng-hide="authData" href="#signup">Sign Up</a></li>
               <li><a ng-hide="authData" href="#login" >Login</a></li>
               <li><a ng-show="authData" href="#" ng-click="logout()">Logout</a></li>         

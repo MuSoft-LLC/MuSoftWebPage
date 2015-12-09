@@ -73,13 +73,14 @@ body {
 }
 
 .socialLogin {
-    display: table;
+
+	display: table;
     margin: 0 auto;
     text-align: center;
 }
 
 .customForm {
-	width: 80%;
+	width: 50%;
 	margin: auto;
 	border-radius: 4px;
 	padding: 20px;

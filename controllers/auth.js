@@ -6,20 +6,26 @@ angular.module('MuSoft').controller('authController', function($scope, AuthFacto
 			 console.log(authData);
 		 });
 		 
-		 //github login name needs refactoring
-		 $scope.login = function() {
+		 
+		 $scope.gitLogin = function() {
 			 AuthFactory.$authWithOAuthPopup("github").then(function(authData) {
 			 console.log(authData);		 
 			 }).catch(function(error){
 				 console.error(error);
 			 });
 		 }
-		 //github logout name needs refactoring
-		 $scope.logout = function() {
-			 AuthFactory.$unauth();
-		 }
-		 
 		
+		 
+		$scope.twitterLogin = function() {
+		ref.authWithOAuthPopup("twitter", function(error, authData) {
+  			if (error) {
+    		console.log("Login Failed!", error);
+			console.log(authData);
+  			} else {
+    		console.log("Authenticated successfully with payload:", authData);
+  				}
+			});
+		}
 		
 		$scope.fbLogin = function(){
 		ref.authWithOAuthPopup("facebook", function(error, authData) {
@@ -31,33 +37,8 @@ angular.module('MuSoft').controller('authController', function($scope, AuthFacto
 			});
 		}
 			
-		// email / password login not currently working 
-		
-		
-		//creates users
-		//	ref.createUser({
-  		//		email    : "nickmuscara@gmail.com",
-  		//		password : "1234"
-	    //	}, function(error, userData) {	
-		//		  if (error) {
-    	//			console.log("Error creating user:", error);
-  		//		} else {
-    	//			console.log("Successfully created user account with uid:", userData.uid);
-  		//		}
-				  
-		//		  remember: "sessionOnly"
-		//   }); 
-		
-		//logs users in
-		//ref.authWithPassword({
-  		//	email    : "bobtony@firebase.com",
- 		//	 password : "correcthorsebatterystaple"
-		//	}, function(error, authData) {
-  		//		if (error) {
-  		//		  console.log("Login Failed!", error);
- 		//	 	} else {
-  		//		 console.log("Authenticated successfully with payload:", authData);
- 		//		 }
-		//	});
+		 $scope.logout = function() {
+			 AuthFactory.$unauth();
+		 }
 });
 	
